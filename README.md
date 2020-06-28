@@ -3,9 +3,7 @@
 
 In this repo there are tutorial docs and supporting files for the  **IBM Blockchain Platform VS Code Extension Commercial Paper tutorial series**  - the current editions located on IBM Developer at https://developer.ibm.com/series/blockchain-running-enhancing-commercial-paper-smart-contract/ are out of date and will be replaced in due course (probably during July 2020).
 
-![Local Dev Cycle](/img/main/typical-dev.png)
 The old series have been revised and no longer work.
-
 
 ## Tutorials summary
 
