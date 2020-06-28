@@ -1,10 +1,13 @@
-## Commercial Paper tutorials (2020 - series of 3 tutorials
+## Commercial Paper tutorials (2020 - series of 3 tutorials)
 
 
 In this repo there are tutorial docs and supporting files for the  **IBM Blockchain Platform VS Code Extension Commercial Paper tutorial series**  - the current editions located on IBM Developer at https://developer.ibm.com/series/blockchain-running-enhancing-commercial-paper-smart-contract/ are out of date and will be replaced in due course (probably during July 2020).
 
-The old series have been revised
+![Local Dev Cycle](/img/main/typical-dev.png)
+The old series have been revised and no longer work.
 
+
+## Tutorials summary
 
 1. Running and executing a commercial paper locally in development, using the IBM Blockchain Platform VS Code extension
 2. Developing and enhancing the smart contract, adding a range of query transaction functions, both simple and advanced. Then testing these work locally.
@@ -15,15 +18,19 @@ The old series have been revised
 - connect up your client applications to be able to interact with the network and finally
 - use client browser apps to render HTML 5 reports: asset history and the deltas history.
 
+## Diagrams
+
+![Overview](/img/main/reduced-overview.png)
+
+
 A summary of the end-to-end cycle is shown here:
 
-    <img src="/img/main/dev-overview.png" title="Development overview" alt="End-to-End dev journey to IBM Blockchain Platform" />
+![End-to-End Flow; Dev -> IBM Blockchain Platform in IBM Cloud](/img/main/dev-overview.png)
     
     
 A typical local dev lifecycle looks something like this:
 
-    <img src="/img/main/typical-dev.png" title="Local Development cycle" alt="Local development cycle" />
-    
+![Local Dev Cycle](/img/main/typical-dev.png)
 
 
 
