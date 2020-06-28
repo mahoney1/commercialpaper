@@ -11,10 +11,10 @@ The old series have been revised and no longer work.
 2. Developing and enhancing the smart contract, adding a range of query transaction functions, both simple and advanced. Then testing these work locally.
 3. Building a pilot IBM Blockchain Platform 2.5 'commerce' network in IBM Cloud, consisting of three organisations: MagnetoCorp, DigiBank and Hedgematic. You will use the IBM Blockchain Platform ansible collection](https://ibm-blockchain.github.io/ansible-collection/) to do this (you'll be provided the ansible playbooks too). Once built, you'll:
 
-- connect up to your remote blockchain network in IBM Cloud using the VS Code extension
-- test the new functionality added to the smart contract all 3 organisations will use.  
-- connect up your client applications to be able to interact with the network and finally
-- use client browser apps to render HTML 5 reports: asset history and the deltas history.
+    - connect up to your remote blockchain network in IBM Cloud using the VS Code extension
+    - test the new functionality added to the smart contract all 3 organisations will use.  
+    - connect up your client applications to be able to interact with the network and finally
+    - use client browser apps to render HTML 5 reports: asset history and the deltas history.
 
 ## Diagrams
 
