@@ -24,7 +24,7 @@ MagnetoCorp manufactures electric vehicles and has just landed a big contract. T
 #### Overview diagram
 
 <p>
-    <img src="/img/tutorial1/overview.png" title="Commercial Paper scenario overview" alt="scenario overview" />
+    <img src="/img/main/reduced-overview.png" title="Commercial Paper scenario overview" alt="scenario overview" />
 </p>
 
 
@@ -133,9 +133,9 @@ The commercial paper scenario describes contract transactions that are run by em
   
 3. When prompted, copy and paste the following parameters (incl. double-quotes) **inside** the existing square brackets "[]" and hit ENTER. Hit ENTER to accept defaults for the next two prompts:  `Transient data` entry, and  `DEFAULT peer targeting policy`.
 
-```
-  "MagnetoCorp","000010","2020-05-31","2020-11-30","5000000"
-```
+    ```
+    "MagnetoCorp","000010","2020-05-31","2020-11-30","5000000"
+    ```
   
 4. Check the message (in the **Output** pane) indicating that this transaction was successfully submitted.
   
@@ -152,9 +152,9 @@ The commercial paper scenario describes contract transactions that are run by em
 
 4. When prompted, copy and paste the following parameters (incl. the double-quotes) **inside** the square brackets, `[]`. Hit ENTER to accept defaults for the next two prompts:  `Transient data` entry, and  `DEFAULT peer targeting policy`:
   
-```
-  "MagnetoCorp","000010","MagnetoCorp","DigiBank","4900000","2020-05-31"
-```
+    ```
+    "MagnetoCorp","000010","MagnetoCorp","DigiBank","4900000","2020-05-31"
+    ```
   
 5. Check the message (in the output pane) indicating that this transaction was successfully submitted.
 
@@ -167,11 +167,12 @@ Some months later in the commercial paper's lifecycle, the current owner (DigiBa
   
 2. When prompted, copy and paste the following parameters (incl. the double-quotes) **inside** the square brackets, `[]`, and hit ENTER, then hit ENTER again (to skip Transient Data and Peer Targeting):
   
-```
-  "MagnetoCorp","000010","DigiBank","2020-11-30"
-```
+    ```
+    "MagnetoCorp","000010","DigiBank","2020-11-30"
+    ```
   
 3. Check the message (in the output pane) indicating that this redeem transaction was successfully submitted.
+
 
 Well done! You've completed this tutorial and successfully interacted with the smart contract, which demonstrates a simple lifecycle of a commercial paper instance (with 3 simple transactions) on the Commerce blockchain network. The next tutorial will see you adding code to be able to query the ledger. Part of your development task will be to enhance the smart contract by adding different kinds of queries, both simple and advanced. The longer-term goal is to deploy the enhanced contract to a proper 3-organisation network in IBM Blockchain Platform in IBM Cloud, showing how you can interact with that blockchain network as different organisations (using both the VS Code extension and client applications, incl. an HTML 5 client app to report on Asset history on the ledger.
 
@@ -181,19 +182,19 @@ You've learned, as a developer,  how to deploy a simple yet substantial commerci
 
 [My next tutorial, part 2 of this series](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md) will concentrate on another organisation perspective: ability to access the ledger data to get the history or lifecycle of an asset. Answering questions like:
 
-* What was the "paper" trail? 
-* Who performed the transactions (the identities involved)?
-* Exactly when did they take place?
-* What exactly were the changes made for each transaction in that history?
+    * What was the "paper" trail? 
+    * Who performed the transactions (the identities involved)?
+    * Exactly when did they take place?
+    * What exactly were the changes made for each transaction in that history?
 
 This means adding query functionality to the smart contract, as well as some "standard worker functions" to get you the right information from the historical transactions. These results are sent back to application clients to consume.
 
 In order to complete the next tutorials (Parts 2 and 3), you'll have needed to clone some sample artifacts (code, script files, etc.) from GitHub (if you haven't already done so). To do this, open up a terminal window, locate your desired directory, and paste in the following commands:
 
-```
-cd $HOME
-git clone https://github.com/mahoney1/commercialpaper
-```
+    ```
+    cd $HOME
+    git clone https://github.com/mahoney1/commercialpaper
+    ```
 
 The repository should now be successfully cloned, in preparation for the next stage. The next tutorial (part 2 of 3 in this series) focuses on adding query functionality to this Commercial Paper sample. Follow the instructions for that [here](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md)
 
