@@ -2,9 +2,9 @@
   "name": "query client app",
   "version": "1.0.0",
   "description": "",
-  "main": "clientapp.js",
+  "main": "clientqueryapp.js",
   "scripts": {
-    "test": "node clientapp.js"
+    "test": "node clientqueryapp.js"
   },
   "keywords": [],
   "author": "",
