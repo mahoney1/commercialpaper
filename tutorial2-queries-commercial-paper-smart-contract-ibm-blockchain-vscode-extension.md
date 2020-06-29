@@ -345,7 +345,7 @@ Well done! You have now added rich query and advanced query functionality to the
 
 12. Disconnect from `Org1 Gateway` at this point.
 
-### Step 4. Perform the issue, buy, and redeem transaction lifecycle to create data on the ledger
+### Step 5. Perform the issue, buy, and redeem transaction lifecycle to create data on the ledger
 
 Let’s create some transactions, invoked as different identities, to create a history of transactions on the ledger. MagnetoCorp is Org1, and DigiBank/Hedgematic are represented as Org2 for development purposes (when you move to the cloud, you will have separate Organisations with real identities issued by those orgs) The sequence is:
 
@@ -430,7 +430,7 @@ Months later in this commercial paper's lifecycle, the current owner (Hedgematic
 Well done! You've completed a full commercial paper transaction lifecycle; now its time to do some queries on the data.
 
 
-### Step 5. Try out two simple queries in the upgraded contract using the VS Code extension
+### Step 6. Try out two simple queries in the upgraded contract using the VS Code extension
 
 Let's test out a simply query you added, with some ledger data:
 
