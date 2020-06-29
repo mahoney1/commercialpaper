@@ -376,7 +376,7 @@ In this section, edit the `clientqueryapp.js`  and add a piece of code to get de
     console.log(' ');
     ```
 
-    This code calls the `queryDeltas` function you added when enhancing the smart contract earlier, and will write the results out to a file called `deltas.json` - you'll use another HTML client to get this Deltas report.
+    This code calls the `queryDeltas` transaction function you added when enhancing the smart contract earlier, and will write the results out to a file called `deltas.json` - you'll use another HTML client to get this Deltas report.
 
 3. Now invoke the upgraded client app just as you had done before:
 
@@ -384,7 +384,11 @@ In this section, edit the `clientqueryapp.js`  and add a piece of code to get de
     node clientapp.js DigiBank  david
     ```
 
-4. Now using the provided `deltas.html` provided in the Github repo, render the results in `deltas.json` in your browser app - you'll provide a parameter to this file
+4. Now using the provided `deltas.html` provided in the Github repo, render the results in `deltas.json` in your browser app - you'll provide a parameter to this file:
+
+    ```
+    firefox deltas.html?myParam="MagnetoCorp:0001"
+    ```
 
     <img src="/img/tutorial3/html-deltas-report.png" title="Render Deltas History report" alt="Render Asset History report" />
 
