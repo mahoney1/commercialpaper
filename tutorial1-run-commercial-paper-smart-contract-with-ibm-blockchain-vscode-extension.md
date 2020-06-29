@@ -1,7 +1,7 @@
 # Tutorial 1/3: "Run a commercial paper smart contract with the IBM Blockchain VS Code extension"
 
 These are step-by-step instructions to complete tutorial https://developer.ibm.com/tutorials/run-commercial-paper-smart-contract-with-ibm-blockchain-vscode-extension/ on IBM Developer, part of the Tutorial series https://developer.ibm.com/technologies/blockchain/series/blockchain-running-enhancing-commercial-paper-smart-contract
-For support issues with this tutorial, see my contact details in the [README](https://github.com/mahoney1/commpaper/blob/master/README.md) on how to get in touch.
+For support issues with this tutorial, create an issue in the repo in the [Issues](https://github.com/mahoney1/commercialpaper/issues).
 
 ## Preparation
 
@@ -19,7 +19,7 @@ docker network prune ; docker volume prune
 
 ## Scenario
 
-MagnetoCorp manufactures electric vehicles and has just landed a big contract. They have a short turnaround time, so will sub-contract most of the work; this means they need funds/liquidity to be able to pay contractors weekly. MagnetoCorp have been here before. They will issue a commercial paper for sale at $1m to obtain funds -  this is performed by Isabella, a MagnetoCorp employee. A few weeks later, an investor, DigiBank (through its investment trader, Balaji) has an offer of $0.96m accepted on the advertised commercial paper. DigiBank holds it for a period of time (eg 6 months), and then redeems it at face value with MagnetoCorp, gaining a return on investment. Note that a commercial paper can 'change hands' a number of times in a real marketplace. You can read more about this commercial paper example in [this Hyperledger Fabric docs tutorial](https://hyperledger-fabric.readthedocs.io/en/master/tutorial/commercial_paper.html).  
+MagnetoCorp manufactures electric vehicles and has just landed a big contract. They have a short turnaround time, so will sub-contract most of the work; this means they need funds/liquidity to be able to pay contractors weekly. MagnetoCorp have been here before. They will issue a commercial paper for sale at $1m to obtain funds -  this is performed by a MagnetoCorp employee. A few weeks later, an investor, DigiBank (through its investment trader) has an offer of $0.96m accepted on the advertised commercial paper. DigiBank holds it for a period of time (eg 6 months), and then redeems it at face value with MagnetoCorp, gaining a return on investment. Note that a commercial paper can 'change hands' a number of times in a real marketplace - in tutorial 3, Hedgematic become a buyer in the asset lifecycle. You can read more detail on Commercial paper assets in [this Hyperledger Fabric docs tutorial](https://hyperledger-fabric.readthedocs.io/en/master/tutorial/commercial_paper.html).  
 
 #### Overview diagram
 
@@ -40,9 +40,9 @@ git clone --branch release-1.4 https://github.com/hyperledger/fabric-samples
 
 ### Step 2. Launch VS Code and install the IBM Blockchain Platform extension for VS Code
 
-You can launch VS Code from your task bar, or by typing `code` in a terminal window.
+You can launch VS Code from your task bar, or by typing `code` in a terminal window inside the `fabric-samples/commercial-paper/organization/magnetocorp/contract` subdirectory.
 
-1.  you need to install the latest IBM Blockchain Platform VS Code extension (see pre-requisites above). If you already happen to have VS Code itself installed, you should check first that you have a supported version of VS Code for this extension, per the release notes (go to `Help` -> ` Check for updates`for the VS Code version itself).
+1. You need to install the latest IBM Blockchain Platform VS Code extension (see pre-requisites above). If you already happen to have VS Code itself installed, you should check first that you have a supported version of VS Code for this extension, per the release notes (go to `Help` -> ` Check for updates`for the VS Code version itself).
 
     <img src="/img/tutorial1/installExtension.gif" title="install the extension" alt="Find the extension" />
 
@@ -57,7 +57,7 @@ You can launch VS Code from your task bar, or by typing `code` in a terminal win
     <img src="/img/tutorial1/papercontract.png" title="Open contract folder" alt="Open contract folder" />
 
  
-2. Explore the `papercontract.js` file, which is located in the `lib` subfolder. It contains the main body of transaction function logic (issue, buy, redeem, etc.), and is also underpinned by essential 'worker' functions such as interacting with the ledger. The link to the Fabric docs tutorial earlier explains the concepts, themes, and programmatic model and approach to writing contracts using a commercial paper scenario. Take some time to read that explainer if you need to and then resume here.
+2. Explore the `papercontract.js` file, which is located in the `lib` subfolder. It contains the main body of transaction function logic (issue, buy, redeem, etc.), and is also underpinned by essential 'worker' functions such as interacting with the ledger. The link to the Fabric docs tutorial provided earlier explains the concepts, themes, and programmatic model and approach to writing contracts using a commercial paper scenario. Take some time to read that explainer if you need to and then resume here.
 
 3. Go back to the `contract` folder by clicking on the folder name on the left in the VS Code Explorer. It's important to do so before the next step.
   
@@ -98,7 +98,6 @@ You can launch VS Code from your task bar, or by typing `code` in a terminal win
 
     <img src="/img/tutorial1/choose-contract.png" title="Choose contract" alt="Choose contract" />
 
-
 7. When prompted, enter `instantiate` (all lower case) as the function name to call during instantiation.
 
     <img src="/img/tutorial1/instantiate-function.png" title="Instantiate function" alt="Instantiate function" />
@@ -112,14 +111,14 @@ You can launch VS Code from your task bar, or by typing `code` in a terminal win
     You should quickly get a message that the contract was instantiated successfully (and you will see the running contract under 'Instantiated' on the sidebar on the left).
     
 
-OK, we now have a deployed contract. The 2-organization template also creates some default admin identities (for the respective organisations) that we will use in this tutorial to interact with the 'Commerce' network (Org1: MagnetoCorp and Org2: DigiBank).
+OK, we now have a deployed contract. The 2-organization template also creates some default admin identities (for the respective organisations) that you will use in this tutorial to interact with the 'Commerce' network you created (Org1: MagnetoCorp and Org2: DigiBank).
 
 
 ### Step 6. Execute the commercial paper smart contract transactions from client applications: MagnetoCorp and DigiBank
 
 So far, you've installed and instantiated your smart contract on the Commerce blockchain network. Now it's time to try out the smart contract transactions as a developer.
 
-The commercial paper scenario describes contract transactions that are run by employees of two of the organizations: MagnetoCorp ("Org1") and DigiBank ("Org2"). Using the IBM Blockchain Platform VS Code extension, you will execute the transactions in turn, connecting to the local Fabric Gateway, and interact with your development blockchain network using different identities. Figure 6 summarizes how they would interact using client applications and identities/wallets (provided to the employees of each company organization) in a more realistic environment.
+The commercial paper scenario describes contract transactions that are run by employees of two of the organizations: MagnetoCorp ("Org1") and DigiBank ("Org2"). You will execute the transactions in turn, connecting to each local Fabric Gateway and transact with your development blockchain network using different identities. Figure 6 summarizes how they would interact using client applications and appropriate identities/wallets ie provided by each company organization) in a more realistic environment.
 
 <img src="/img/tutorial1/flow-transaction.png" title="Transaction Flow - overview" alt="Transaction Flow - overview" />
 
@@ -134,9 +133,9 @@ The commercial paper scenario describes contract transactions that are run by em
   
 3. When prompted, copy and paste the following parameters (incl. double-quotes) **inside** the existing square brackets "[]" and hit ENTER. Hit ENTER to accept defaults for the next two prompts:  `Transient data` entry, and  `DEFAULT peer targeting policy`.
 
-  ```
+```
   "MagnetoCorp","000010","2020-05-31","2020-11-30","5000000"
-  ```
+```
   
 4. Check the message (in the **Output** pane) indicating that this transaction was successfully submitted.
   
@@ -153,9 +152,9 @@ The commercial paper scenario describes contract transactions that are run by em
 
 4. When prompted, copy and paste the following parameters (incl. the double-quotes) **inside** the square brackets, `[]`. Hit ENTER to accept defaults for the next two prompts:  `Transient data` entry, and  `DEFAULT peer targeting policy`:
   
-  ```
+```
   "MagnetoCorp","000010","MagnetoCorp","DigiBank","4900000","2020-05-31"
-  ```
+```
   
 5. Check the message (in the output pane) indicating that this transaction was successfully submitted.
 
@@ -168,36 +167,37 @@ Some months later in the commercial paper's lifecycle, the current owner (DigiBa
   
 2. When prompted, copy and paste the following parameters (incl. the double-quotes) **inside** the square brackets, `[]`, and hit ENTER, then hit ENTER again (to skip Transient Data and Peer Targeting):
   
-  ```
+```
   "MagnetoCorp","000010","DigiBank","2020-11-30"
-  ```
+```
   
 3. Check the message (in the output pane) indicating that this redeem transaction was successfully submitted.
 
-Well done! You've completed this tutorial and successfully interacted with the smart contract, which demonstrates a simple lifecycle of a commercial paper instance (with 3 transactions) on the Commerce blockchain network. The next tutorial will see you adding code, to enrich the smart contract by adding different kinds of queries, both simple and advanced. The longer-term goal is to deploy the enhanced contract to a proper 3-organisation network in IBM Blockchain Platform, so that you can interact with the Cloud environment from both the VS Code extension and client applications, including an HTML 5 client app to report on Asset history.
+Well done! You've completed this tutorial and successfully interacted with the smart contract, which demonstrates a simple lifecycle of a commercial paper instance (with 3 simple transactions) on the Commerce blockchain network. The next tutorial will see you adding code to be able to query the ledger. Part of your development task will be to enhance the smart contract by adding different kinds of queries, both simple and advanced. The longer-term goal is to deploy the enhanced contract to a proper 3-organisation network in IBM Blockchain Platform in IBM Cloud, showing how you can interact with that blockchain network as different organisations (using both the VS Code extension and client applications, incl. an HTML 5 client app to report on Asset history on the ledger.
 
 ## Summary
 
-You've learned how to deploy a simple yet substantial commercial paper smart contract sample to a Commerce Fabric blockchain network involving multiple organisations. You’ve seen how it can explore, package, install, and instantiate a smart contract on that network, and how to use the IBM Blockchain Platform [VS Code extension](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform) to submit transactions as different organisations, which are recorded on the ledger. (Clearly, the extension provides a lot more -- such as the develop/debug/test lifecycle of a developer -- beyond the scope of this simple tutorial.)
+You've learned, as a developer,  how to deploy a simple yet substantial commercial paper smart contract sample to a local Commerce Fabric blockchain network.  You’ve seen how you can explore, package, install, and instantiate a smart contract on that network, and how to use the IBM Blockchain Platform [VS Code extension](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform) to submit transactions as different sample organisations. 
 
-[My next tutorial, part 2 of this series](https://developer.ibm.com/tutorials/queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension/) will concentrate on another application perspective, querying the the history or lifecycle of an asset on the ledger. I'll answer questions like:
+[My next tutorial, part 2 of this series](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md) will concentrate on another organisation perspective: ability to access the ledger data to get the history or lifecycle of an asset. Answering questions like:
 
-* What was the "paper" trail? (Get it?)
+* What was the "paper" trail? 
 * Who performed the transactions (the identities involved)?
 * Exactly when did they take place?
 * What exactly were the changes made for each transaction in that history?
 
-This means adding query functionality to the smart contract, as well as some "standard functions to get you the right information from the historical transactions. These results are sent back to application clients to consume.
+This means adding query functionality to the smart contract, as well as some "standard worker functions" to get you the right information from the historical transactions. These results are sent back to application clients to consume.
 
-In order to complete the next tutorials (Parts 2 and 3), you'll need to clone some sample artifacts (code, script files, etc.) from GitHub (if you haven't already done so). To do this, open up a terminal window, locate your desired directory, and paste in the following commands:
+In order to complete the next tutorials (Parts 2 and 3), you'll have needed to clone some sample artifacts (code, script files, etc.) from GitHub (if you haven't already done so). To do this, open up a terminal window, locate your desired directory, and paste in the following commands:
 
 ```
 cd $HOME
-git clone https://github.com/mahoney1/commpaper
+git clone https://github.com/mahoney1/commercialpaper
 ```
 
-The repository should now be successfully cloned, in preparation for the next stage. The next tutorial (part 2 of 3 in this series) focuses on adding query functionality to this Commercial Paper sample. Follow the instructions for that [here](https://developer.ibm.com/tutorials/queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension/)
+The repository should now be successfully cloned, in preparation for the next stage. The next tutorial (part 2 of 3 in this series) focuses on adding query functionality to this Commercial Paper sample. Follow the instructions for that [here](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md)
 
-If you haven't done so, I recommend checking out the excellent tutorials in the IBM Blockchain Platform VS Code extension - simply click on 'Tutorials' from the extension's home page (the home page icon is top right).
+For further study beyond this tutorial series, I firstly recommend you to look at the new [IBM Blockchain Foundation Developer course and badge](https://cognitiveclass.ai/courses/ibm-blockchain-foundation-dev) that allows developers to demonstrate their understanding of Hyperledger Fabric development. The course makes full use of the new tutorials embedded in the IBM Blockchain Platform VS Code extension itself, and the resulting badge rewards developers for completing these. Note that the badge is fully accredited by IBM and is part of the Acclaim open badge platform that recognizes professional success. Why not try the course out!
+
 
 Thanks for joining me!
