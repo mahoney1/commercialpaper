@@ -293,9 +293,9 @@ OK -- let's get started!
 
 7.  Create a blank line below it by hitting ENTER, and paste in the following line in `state.js` so it reads:
 
-   ```
-   return keyParts.map(part => part).join(':');
-   ```
+    ```
+    return keyParts.map(part => part).join(':');
+    ```
 
     Hit CONTROL and 'S' to save your `state.js` file changes. You're now done with smart contract edits.
 
@@ -462,7 +462,7 @@ The output panel should reveal a JSON formatted data listing, showing the histor
   
 6. Accept the defaults by simply hitting `enter` for the next 3 prompts (accept the defaults)
 
-The output panel should reveal a JSON formatted data listing, showing the Commercial paper assets owned by MagnetoCorp (1 paper - after the 'redeem' transaction, ownership changed from Hedgematic -> MagnetoCorp).
+    The output panel should reveal a JSON formatted data listing, showing the Commercial paper assets owned by MagnetoCorp (1 paper - after the 'redeem' transaction, ownership changed from Hedgematic -> MagnetoCorp).
 
     <img src="/img/tutorial2/queryowner-output.png" title="queryOwner output" alt="queryOwner output" />
 
@@ -473,7 +473,8 @@ The output panel should reveal a JSON formatted data listing, showing the Commer
     ```
 
     <img src="/img/tutorial2/querypartial-output.png" title="query by Partial key output" alt="query by Partial key output" />
-    
+
+
 OK, so our query functions appear to be working fine. Our contract is ready. Now we need to deploy this to a 'real' network, which you'll create (by means of an automated Ansible script) once you create your free cluster in IBM Cloud (You can [preview the IBM Blockchain Platform at no charge for 30 days](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fblockchain). You will need to create, then link  - your IBM Blockchain Platform service instance to the IBM Cloud Kubernetes free cluster.
 
 
