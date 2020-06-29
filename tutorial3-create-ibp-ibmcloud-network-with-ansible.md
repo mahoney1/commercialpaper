@@ -1,4 +1,4 @@
-# Tutorial 2/3: "Putting it altogether: deploy your contract to a real Commercial Paper IBM Blockchain Platform network built using Ansible"
+# Tutorial 3/3: "Putting it altogether: deploy your contract to a real Commercial Paper IBM Blockchain Platform network built using Ansible"
 
 
 ## Introduction
