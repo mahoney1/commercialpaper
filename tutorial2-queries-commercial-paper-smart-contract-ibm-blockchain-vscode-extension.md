@@ -175,9 +175,9 @@ OK -- let's get started!
 1. With the `query.js` file still open, add the 'advanced' query code functions to it - copy/paste the code segment below before the **last curly bracket**, before the bottom of `query.js` (ie the bracket before the `module.exports` line). 
 
     ```
-  // =========================================================================================
-   // getDeltas takes getHistory results for an asset and returns the deltas
-   // =========================================================================================
+    // =========================================================================================
+    // getDeltas takes getHistory results for an asset and returns the deltas
+    // =========================================================================================
 
     async getDeltas(obj)  {
 
