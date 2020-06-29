@@ -193,7 +193,7 @@ In order to complete the next tutorials (Parts 2 and 3), you'll have needed to c
 
 ```
 cd $HOME
-    git clone https://github.com/mahoney1/commercialpaper
+git clone https://github.com/mahoney1/commercialpaper
 ```
 
 The repository should now be successfully cloned, in preparation for the next stage. The next tutorial (part 2 of 3 in this series) focuses on adding query functionality to this Commercial Paper sample. Follow the instructions for that [here](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md)
