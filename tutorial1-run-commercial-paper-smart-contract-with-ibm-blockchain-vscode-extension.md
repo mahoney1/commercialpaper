@@ -191,10 +191,10 @@ This means adding query functionality to the smart contract, as well as some "st
 
 In order to complete the next tutorials (Parts 2 and 3), you'll have needed to clone some sample artifacts (code, script files, etc.) from GitHub (if you haven't already done so). To do this, open up a terminal window, locate your desired directory, and paste in the following commands:
 
-    ```
-    cd $HOME
+```
+cd $HOME
     git clone https://github.com/mahoney1/commercialpaper
-    ```
+```
 
 The repository should now be successfully cloned, in preparation for the next stage. The next tutorial (part 2 of 3 in this series) focuses on adding query functionality to this Commercial Paper sample. Follow the instructions for that [here](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md)
 
