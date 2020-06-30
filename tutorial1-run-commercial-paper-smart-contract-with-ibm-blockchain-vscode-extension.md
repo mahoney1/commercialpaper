@@ -32,7 +32,7 @@ MagnetoCorp manufactures electric vehicles and has just landed a big contract. T
 
 ### Step 1. Get the commercial paper sample in Fabric Samples
 
-1. From a terminal window, clone the Fabric samples repo (and specifically the "master" branch) to your $HOME directory:
+1. From a terminal window, clone the Fabric samples repo (and specifically the `release-1.4` branch) to your $HOME directory:
 
 ```
 git clone --branch release-1.4 https://github.com/hyperledger/fabric-samples
