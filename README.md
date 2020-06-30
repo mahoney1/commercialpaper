@@ -7,9 +7,11 @@ The old IBM Developer based series have been revised (new Github tutorials below
 
 ## Tutorials summary
 
-1. Running and executing a commercial paper locally in development, using the IBM Blockchain Platform VS Code extension
-2. Developing and enhancing the smart contract, adding a range of query transaction functions, both simple and advanced. Then testing these work locally.
-3. Building a pilot IBM Blockchain Platform 2.5  Commercial Paper ('commerce') network in IBM Cloud, consisting of three organisations: MagnetoCorp, DigiBank and Hedgematic. You will use the [IBM Blockchain Platform ansible collection](https://ibm-blockchain.github.io/ansible-collection/). In the github repo you cloned earlier, you will see a subdirectory called `ansible` - this contains the ansible playbooks to build the network in IBM Blockchain Platform in IBM Cloud. Once built, you will then:
+![Overview](/img/main/ibp-console.png)
+
+1. [Running and executing a commercial paper](https://github.com/mahoney1/commercialpaper/blob/master/tutorial1-run-commercial-paper-smart-contract-with-ibm-blockchain-vscode-extension.md) locally in development, using the IBM Blockchain Platform VS Code extension
+2. [Developing and enhancing the smart contract, adding a range of query transaction functions](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md), both simple and advanced. Then testing these work locally.
+3. [Building a pilot IBM Blockchain Platform 2.5  Commercial Paper ('commerce') network in IBM Cloud](https://github.com/mahoney1/commercialpaper/blob/master/tutorial3-create-ibp-ibmcloud-network-with-ansible.md), consisting of three organisations: MagnetoCorp, DigiBank and Hedgematic. You will use the [IBM Blockchain Platform ansible collection](https://ibm-blockchain.github.io/ansible-collection/). In the github repo you cloned earlier, you will see a subdirectory called `ansible` - this contains the ansible playbooks to build the network in IBM Blockchain Platform in IBM Cloud. Once built, you will then:
 
     - connect up to your remote blockchain network "('Commerce') in IBM Cloud using the VS Code extension
     - test the new functionality added to the smart contract all 3 organisations will use.  
