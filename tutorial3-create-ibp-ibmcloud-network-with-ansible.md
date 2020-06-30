@@ -186,7 +186,7 @@ In this section, you will launch the ansible builder to provision a network for 
 
     After adding, if you expand these 3 wallets you should see the following structure, showing the enrolled application identities in their respective organisational wallets.
 
-    <img src="/img/tutorial3/create-ext-wallet.png" title="Create new wallet" alt="Create new wallet" />
+    <img src="/img/tutorial3/wallet-summary.png" title="Create new wallet" alt="Wallet Structure" />
 
     Well done - you're now ready to test your connection to your 'Commerce network' and the first thing to try is to see if you can see the smart contract transaction list. At this point, FYI - there is no ledger data on the blockchain.
 
@@ -208,7 +208,7 @@ Let’s create some transactions, invoked as the different identities, to create
 
 1. From the IBM Blockchain Platform VS Code sidebar panel, you should already be connected as application id `magnus` to the `MagnetoCorp_GW`. Expand the `mychannel` twisty, then  expand `papercontract@0.0.2` and highlight the `issue` transaction.
 
-    <img src="/img/tutorial2/issue-txn-saas.png" title="Issue trxn as MagnetoCorp" alt="Issue trxn as MagnetoCorp" />
+    <img src="/img/tutorial3/issue-txn-saas.png" title="Issue trxn as MagnetoCorp" alt="Issue trxn as MagnetoCorp" />
 
 2. Right-click  on `issue and choose `Submit Transaction`. A pop-up window should appear at the top.
   
