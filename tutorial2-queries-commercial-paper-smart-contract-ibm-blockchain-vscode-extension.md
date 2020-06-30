@@ -475,7 +475,7 @@ The output panel should reveal a JSON formatted data listing, showing the histor
     <img src="/img/tutorial2/querypartial-output.png" title="query by Partial key output" alt="query by Partial key output" />
 
 
-OK, so our query functions appear to be working fine. Our contract is ready. Now we need to deploy this to a 'real' network, which you'll create (by means of an automated Ansible script) once you create your free cluster in IBM Cloud (You can [preview the IBM Blockchain Platform at no charge for 30 days](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fblockchain). You will need to create, then link  - your IBM Blockchain Platform service instance to the IBM Cloud Kubernetes free cluster.
+OK, so our query functions appear to be working fine. Our contract is ready. Now we need to deploy this to a 'real' network, which you'll create (by means of an automated Ansible script) once you create your free cluster in IBM Cloud (You can [preview the IBM Blockchain Platform at no charge for 30 days](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fblockchain). You will need to create the cluster, then link, your IBM Blockchain Platform service instance to the IBM Cloud Kubernetes free cluster.
 
 
 ## Summary
