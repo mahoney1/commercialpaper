@@ -63,17 +63,15 @@ You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create a
 
     <img src="/img/tutorial3/credentials-added.png" title="Credentials added" alt="Added Credentials" />
 
-9. Copy the credentials using the copy icon on the right - then open a terminal window and 
 
-10. Open up a terminal and change directory to the `commercialpaper` repo (eg in your $HOME directory) - then change to subdirectory `ansible`
+9. Open up a terminal and change directory to the `commercialpaper` repo (eg in your $HOME directory) - then change to subdirectory `ansible`
 
     ```
     cd $HOME/commercialpaper
     cd ansible/
     ```
-    
-11. Create a file called `creds.txt` and paste in the Cloud credentials you copied into this file (approx 6 lines in JSON format) to this file - save the file. 
 
+10. Copy the credentials using the copy icon on the right - then open a terminal window and create a file called `creds.txt` and paste in the Cloud credentials you copied into this file (approx 6 lines in JSON format) to this file - save the file. You'll use these credentials in the next section to build your blockchain network in IBM Blockchain Platform.
 
 
 ### Step 2. Locate the Ansible collection and launch the ansible builder for the 'Commerce' network.
