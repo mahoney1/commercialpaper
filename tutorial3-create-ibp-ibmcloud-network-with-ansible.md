@@ -345,7 +345,7 @@ In this section, you'll test your queries pull data from the real Commerce netwo
     firefox index.html
     ```
 
-You should see a report of your asset data (its dependent on `results.json` existing above) and here you'll see a history of asset `0001`
+    You should see a report of your asset data (its dependent on `results.json` existing above) and here you'll see a history of asset `0001`
 
 
     <img src="/img/tutorial3/html-asset-report.png" title="Render Asset History report" alt="Render Asset History report" />
