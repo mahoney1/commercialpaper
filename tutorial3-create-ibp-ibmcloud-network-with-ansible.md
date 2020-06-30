@@ -339,13 +339,14 @@ In this section, you'll test your queries pull data from the real Commerce netwo
 
     You should see the asset history in a JSON array as output from your application query as identity david. Great. Note it has also written a file `results.json`
 
-4. Now lets use our browser client to render the asset history (above) in HTML 5. The supplied file `index.html` uses the free tool [Tabulator](http://tabulator.info/) to render report in very powerful, extensible and interactive ways. You don't have to install anything, you just launch the HTML file as a browser app as follows:
+4. Now lets use our browser client to render the asset history (above) in HTML 5. The supplied file `index.html` uses the free tool [Tabulator](http://tabulator.info/) to render report in very powerful, extensible and interactive ways. You don't have to install anything, you just launch the HTML file as a browser app in Firefox (currently only supported in FF please note) as follows:
 
     ```
-    node index.html
+    firefox index.html
     ```
 
 You should see a report of your asset data (its dependent on `results.json` existing above) and here you'll see a history of asset `0001`
+
 
     <img src="/img/tutorial3/html-asset-report.png" title="Render Asset History report" alt="Render Asset History report" />
 
