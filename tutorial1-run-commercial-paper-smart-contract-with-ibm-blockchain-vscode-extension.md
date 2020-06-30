@@ -114,7 +114,7 @@ You can launch VS Code from your task bar, or by typing `code` in a terminal win
 OK, we now have a deployed contract. The 2-organization template also creates some default admin identities (for the respective organisations) that you will use in this tutorial to interact with the 'Commerce' network you created (Org1: MagnetoCorp and Org2: DigiBank).
 
 
-### Step 6. Execute the commercial paper smart contract transactions from client applications: MagnetoCorp and DigiBank
+### Step 6. Execute the commercial paper smart contract transactions as Org1 (MagnetoCorp) and Org2(DigiBank)
 
 So far, you've installed and instantiated your smart contract on the Commerce blockchain network. Now it's time to try out the smart contract transactions as a developer.
 
@@ -187,7 +187,7 @@ You've learned, as a developer,  how to deploy a simple yet substantial commerci
     * Exactly when did they take place?
     * What exactly were the changes made for each transaction in that history?
 
-This means adding query functionality to the smart contract, as well as some "standard worker functions" to get you the right information from the historical transactions. These results are sent back to application clients to consume.
+This means adding query functionality to the smart contract, to enable these organisations to use their client applications to perform reports on the ledger. The query results from the smart contract transactions are returned to the application clients to consume.
 
 In order to complete the next tutorials (Parts 2 and 3), you'll have needed to clone some sample artifacts (code, script files, etc.) from GitHub (if you haven't already done so). To do this, open up a terminal window, locate your desired directory, and paste in the following commands:
 
