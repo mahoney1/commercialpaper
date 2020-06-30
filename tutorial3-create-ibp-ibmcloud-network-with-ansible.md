@@ -78,9 +78,10 @@ You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create a
 
 In this section, you will launch the ansible builder to provision a network for our three organisations - each will have one peer and one CA. There is also an Ordering organisation and of course an ordering service (RAFT).  Lastly, you will provision your `papercontract@0.0.2` smart contract this network.
 
-1. You'll need to clone the IBM Blockchain Platform Ansible collection repo  and change directory into it:
+1. You'll need to clone the IBM Blockchain Platform Ansible collection repo  and change directory to you home directory, clone it and change directory to that:
 
     ```
+    cd
     git clone https://github.com/IBM-Blockchain/ansible-collection.git
     cd ansible-collection
     ```
