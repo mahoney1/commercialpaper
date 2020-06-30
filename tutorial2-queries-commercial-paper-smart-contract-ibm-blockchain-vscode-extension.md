@@ -450,7 +450,7 @@ This function is really a 'worker' function (used elsewhere in the contract) to 
 
 4. Accept the defaults by simply hitting `enter` for the next 3 prompts (accept the defaults)
 
-The output panel should reveal a JSON formatted data listing, showing the history of Commercial paper asset key "MagnetoCorp:0001".
+    The output panel should reveal a JSON formatted data listing, showing the history of Commercial paper asset key "MagnetoCorp:0001".
 
     <img src="/img/tutorial2/history-output.png" title="queryHist output" alt="queryHist output" />
 
