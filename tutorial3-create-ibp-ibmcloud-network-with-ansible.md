@@ -7,13 +7,14 @@ Having successfully upgraded the Commercial Paper smart contract ( on the'Commer
 
 One aim of this tutorial, is to show how the [IBM Blockchain Platform Ansible collection](https://github.com/IBM-Blockchain/ansible-collection/blob/master/README.md) can be used to provision an IBM Blockchain Platform 2.5 network - your `papercontract` smart contract is also installed on each peer in this network. For the purposes of this tutorial, all 3 organisation's nodes will be deployed to the same 30-day trial cluster. You can get [information on how to get this cluster](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-saas-pricing#ibp-saas-pricing-free) and use it free for 30 days. You'll need to upgrade to a business account at http://ibm.biz/account first (still have your 30-day trial) to be able to create the 30 day free IBM Kubernetes cluster. 
 
-
 The ansible collection is fully-scripted for you; all you have to do is: get your free cluster, set up an IBM Blockchain Platform service, then: 'press the button'. If you want to read more on IBM Blockchain Ansible collections, including a tutorial - check it out [here](https://ibm-blockchain.github.io/ansible-collection/) 
 
-Once provisioned, you interact with the contract using: 
+    <img src="/img/tutorial3/ibp-cons-summary.png" title="IBP Nodes and instantiated contracty" alt="IBP Nodes and instantiated contract" />
 
-    1) the IBM Blockchain Platform VS Code extension and 
-    2) application clients (provided for you). 
+Once provisioned, you will interact with the contract remotely using: 
+
+    - the IBM Blockchain Platform VS Code extension and 
+    - application clients (provided for you). 
 
 The last part of the tutorial will see you using a HTML 5 client app to render asset reports showing the full lifecycle/history of an asset. 
 
@@ -199,10 +200,10 @@ In this section, you will launch the ansible builder to provision a network for 
 
 Let’s create some transactions, invoked as the different identities, to create a history of transactions on the ledger. The sequence is:
 
-    1. Issue a paper as "MagnetoCorp." 
-    2. Buy the paper as "DigiBank," the new owner.
-    3. Buy the paper as "Hedgematic," the changed owner.
-    4. Redeem the paper at face value, as existing owner "Hedgematic," with MagnetoCorp as the original issuer.
+     - Issue a paper as "MagnetoCorp." 
+     - Buy the paper as "DigiBank," the new owner.
+     - Buy the paper as "Hedgematic," the changed owner.
+     - Redeem the paper at face value, as existing owner "Hedgematic," with MagnetoCorp as the original issuer.
 
 #### Transaction 1: Execute an `issue` transaction as MagnetoCorp
 
@@ -408,6 +409,7 @@ Well done! You've completed the full set of 3 tutorials.
 
 Lets recall what you've completed during the course of this tutorial series:
 
+<p>
     - developed your Papercontract smart contract, then enhanced it by adding functionality (different types of queries)
     - provisioned a three organisation network* (MagnetoCorp, DigiBank and Hedgmatic) instantiated a smart contract and provisioned identities
     - connected up to your network, using the IBM Blockchain Platform extension
@@ -415,7 +417,9 @@ Lets recall what you've completed during the course of this tutorial series:
     - connected up your local client application, to be able to query as an identity from any one of the three organizations
     - finally, as DigiBank, queried the history of a commercial paper asset on the ledger, that is shared across the three organizations. You'll see the complete lifecycle of transactions that you performed, rendered in HTML 5.
 
-    *Normally of course, each organisation would operate their own nodes/components as part of the network, and join the consortium. They would also have their own client application needs etc. etc.
+</p>
+
+*Normally of course, each organisation would operate their own nodes/components as part of the network, and join the consortium. They would also have their own client application needs etc. etc.
 
 For further study, I firstly recommend you to look at the new [IBM Blockchain Foundation Developer course and badge](https://cognitiveclass.ai/courses/ibm-blockchain-foundation-dev) that allows developers to demonstrate their understanding of Hyperledger Fabric development. The course makes full use of the new tutorials embedded in the IBM Blockchain Platform VS Code extension itself, and the resulting badge rewards developers for completing these. Note that the badge is fully accredited by IBM and is part of the Acclaim open badge platform that recognizes professional success.
 
