@@ -1,9 +1,9 @@
 ## Commercial Paper tutorials (2020 - series of 3 tutorials)
 
 
-In this repo there are tutorial docs and supporting files for the  **IBM Blockchain Platform VS Code Extension Commercial Paper tutorial series**  - the current editions located on IBM Developer at https://developer.ibm.com/series/blockchain-running-enhancing-commercial-paper-smart-contract/ are out of date and will be replaced on IBM Developer itself, in due course (probably during July 2020).
+In this repo, there are 3 tutorial docs and supporting files for the  **IBM Blockchain Platform VS Code Extension Commercial Paper tutorial series**  - the current editions located on IBM Developer at https://developer.ibm.com/series/blockchain-running-enhancing-commercial-paper-smart-contract/ are out of date (and will be replaced on IBM Developer itself, in due course - probably during July 2020).
 
-The old IBM Developer based series have been revised (new Github tutorials below) and those old tutorials no longer work.
+The tutorials have been completely rewritten, with the focus on taking the developer beyond local development and testing, into setting up a real Blockchain network between 3 organisations, in IBM Blockchain Platform. It is using the Ansible collection described below to provision the network and deploy the developed commercial paper smart contract.
 
 ## Tutorials summary
 
