@@ -9,14 +9,12 @@ One aim of this tutorial, is to show how the [IBM Blockchain Platform Ansible co
 
 The ansible collection is fully-scripted for you; all you have to do is: get your free cluster, set up an IBM Blockchain Platform service, then: 'press the button'. If you want to read more on IBM Blockchain Ansible collections, including a tutorial - check it out [here](https://ibm-blockchain.github.io/ansible-collection/) 
 
-![IBP Summary View](/img/tutorial3/ibp-cons-summary.png)
-
 <img src="/img/tutorial3/ibp-cons-summary.png" title="IBP Nodes and instantiated contract" alt="IBP Nodes and instantiated contract" />
 
 Once provisioned, you will interact with the contract remotely using: 
 
-    o  the IBM Blockchain Platform VS Code extension and 
-    o  application clients (provided for you). 
+  + the IBM Blockchain Platform VS Code extension and 
+  + application clients (provided for you). 
 
 The last part of the tutorial will see you using a HTML 5 client app to render asset reports showing the full lifecycle/history of an asset. 
 
@@ -411,12 +409,12 @@ Well done! You've completed the full set of 3 tutorials.
 
 Lets recall what you've completed during the course of this tutorial series:
 
-    - developed your Papercontract smart contract, then enhanced it by adding functionality (different types of queries)
-    - provisioned a three organisation network* (MagnetoCorp, DigiBank and Hedgmatic) instantiated a smart contract and provisioned identities
-    - connected up to your network, using the IBM Blockchain Platform extension
-    - transacted as different organisations, to complete a 'typical' commercial paper asset lifecycle
-    - connected up your local client application, to be able to query as an identity from any one of the three organizations
-    - finally, as DigiBank, queried the history of a commercial paper asset on the ledger, that is shared across the three organizations. You'll see the complete lifecycle of transactions that you performed, rendered in HTML 5.
+  + developed your Papercontract smart contract, then enhanced it by adding functionality (different types of queries)
+  + provisioned a three organisation network* (MagnetoCorp, DigiBank and Hedgmatic) instantiated a smart contract and provisioned identities
+  + connected up to your network, using the IBM Blockchain Platform extension
+  + transacted as different organisations, to complete a 'typical' commercial paper asset lifecycle
+  + connected up your local client application, to be able to query as an identity from any one of the three organizations
+  + finally, as DigiBank, pulled the history of a commercial paper asset on the ledger, that is shared across the three organizations. You'll see the complete lifecycle of transactions that you performed, rendered in HTML 5. The same applies with the 2nd report, reporting deltas only.
 
 
 *Normally of course, each organisation would operate their own nodes/components as part of the network, and join the consortium. They would also have their own client application needs etc. etc.
