@@ -182,10 +182,10 @@ You've learned, as a developer,  how to deploy a simple yet substantial commerci
 
 [My next tutorial, part 2 of this series](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md) will concentrate on another organisation perspective: ability to access the ledger data to get the history or lifecycle of an asset. Answering questions like:
 
-    * What was the "paper" trail? 
-    * Who performed the transactions (the identities involved)?
-    * Exactly when did they take place?
-    * What exactly were the changes made for each transaction in that history?
+   + What was the "paper" trail? 
+   + Who performed the transactions (the identities involved and which organisations)?
+   + Exactly when did they take place?
+   + What exactly were the changes made in the lifecycle of that asset, showing details of each transaction in that history?
 
 This means adding query functionality to the smart contract, to enable these organisations to use their client applications to perform reports on the ledger. The query results from the smart contract transactions are returned to the application clients to consume.
 
