@@ -15,8 +15,8 @@ You will add the code as part of the tutorial, then upgrade the smart contract a
 
 The 1st version of the `papercontract` smart contract on the network (featuring MagnetoCorp, DigiBank and Hedgematic) works great, but all parties agree query functionality needs to be added. DigiBank have taken responsibility to add this function in two stages; 
 
-    - first, to add standard queries, like tracing invoking identity information or asset ownership; 
-    - second, is to add rich and more advanced queries like asset history, assets by asset namespace (partial key), ad-hoc queries and  'delta payload' query capability; in the latter, only return the elements that have changed (ie smaller payload response)
+   + first, to add standard queries, like tracing invoking identity information or asset ownership; 
+   + second, is to add rich and more advanced queries like asset history, assets by asset namespace (partial key), ad-hoc queries and  'delta payload' query capability; in the latter, only return the elements that have changed (ie smaller payload response)
 
 Once the functions are added, the smart contract is packaged, then upgraded on the local 'Commerce' network. It is then tested by 2 member organisations, to see the functions work as designed - they create a simple 'paper' trail of transactions to run queries against.
 
@@ -333,10 +333,11 @@ OK -- let's get started!
 
 10. Press `enter` to accept the default 'No' to add a private data collection and again, press `enter` to accept the 'Default' single endorser, when prompted
 
-You should get a message that the new contract was installed on peers and that it was instantiated successfully (and you will see the running contract v0.0.2 under 'Instantiated' on the sidebar on the left).
+    You should get a message that the new contract was installed on peers and that it was instantiated successfully (and you will see the running contract v0.0.2 under 'Instantiated' on the sidebar on the left).
  
     <img src="/img/tutorial2/confirm-instantiation.png" title="Confirm contract instantiation" alt="Confirm contract instantiation" />
    
+
 Well done! You have now added rich query and advanced query functionality to the smart contract. Its now time to test the new transactions.
 
 11. Connect to the `Org2 Gateway` (if not already connected) and expand the channel `mychannel` and contract `papercontract@0.0.2`.  Expand the contract to see the transactions - you'll see the new query functions that you can try out shortly. 
