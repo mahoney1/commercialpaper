@@ -13,8 +13,8 @@ The ansible collection is fully-scripted for you; all you have to do is: get you
 
 Once provisioned, you will interact with the contract remotely using: 
 
-  + the IBM Blockchain Platform VS Code extension and 
-  + application clients (provided for you). 
+   + the IBM Blockchain Platform VS Code extension and 
+   + application clients (provided for you). 
 
 The last part of the tutorial will see you using a HTML 5 client app to render asset reports showing the full lifecycle/history of an asset. 
 
@@ -200,10 +200,10 @@ In this section, you will launch the ansible builder to provision a network for 
 
 Let’s create some transactions, invoked as the different identities, to create a history of transactions on the ledger. The sequence is:
 
-     + Issue a paper as "MagnetoCorp." 
-     + Buy the paper as "DigiBank," the new owner.
-     + Buy the paper as "Hedgematic," the changed owner.
-     + Redeem the paper at face value, as existing owner "Hedgematic," with MagnetoCorp as the original issuer.
+   + Issue a paper as "MagnetoCorp." 
+   + Buy the paper as "DigiBank," the new owner.
+   + Buy the paper as "Hedgematic," the changed owner.
+   + Redeem the paper at face value, as existing owner "Hedgematic," with MagnetoCorp as the original issuer.
 
 #### Transaction 1: Execute an `issue` transaction as MagnetoCorp
 
