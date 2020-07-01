@@ -32,7 +32,7 @@ You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create a
 
     - Create the cluster with the name `mycluster` - it will take a couple of hours to have the IBM Kubernetes cluster provisioned and available (`Status: Green` in your Cloud environment). 
 
-2. Once the cluster is available,  create your IBM Blockchain Platform service instance via the IBM Cloud Catalog](https://cloud.ibm.com/catalog/services/blockchain-platform). Eg name: `Blockchain-Platform-ibp`
+2. Once the cluster is available,  create your IBM Blockchain Platform service instance via the IBM Cloud Catalog](https://cloud.ibm.com/catalog/services/blockchain-platform)  eg name: `Blockchain-Platform-ibp`
 
     <img src="/img/tutorial3/create-service.png" title="Create the IBP service instance" alt="Create IBP service" />
 
