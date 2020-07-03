@@ -5,7 +5,7 @@
 
 Having successfully upgraded the Commercial Paper smart contract ( on the'Commerce' network) in [tutorial 2](https://github.com/mahoney1/commercialpaper/blob/master/tutorial2-queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension.md), MagnetoCorp, DigiBank and Hedgematic - all part of a blockchain consortium - wish to deploy the new contract on their network in IBM Blockchain Platform in IBM Cloud. In this tutorial, you'll automatically provision this network, then deploy the smart contract. The last part will show you how client applications from any organisation, can interact with the ledger data - ie 'business as usual'.
 
-One aim of this tutorial, is to show how the [IBM Blockchain Platform Ansible collection](https://github.com/IBM-Blockchain/ansible-collection/blob/master/README.md) can be used to provision an IBM Blockchain Platform 2.5 network - your `papercontract` smart contract is also installed on each peer in this network. For the purposes of this tutorial, all 3 organisation's nodes will be deployed to the same 30-day trial cluster. You can get [information on how to get this cluster](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-saas-pricing#ibp-saas-pricing-free) and use it free for 30 days. You'll need to upgrade to a business account at http://ibm.biz/account first (still have your 30-day trial) to be able to create the 30 day free IBM Kubernetes cluster. 
+One aim of this tutorial, is to show how the [IBM Blockchain Platform Ansible collection](https://github.com/IBM-Blockchain/ansible-collection/blob/master/README.md) can be used to provision an IBM Blockchain Platform 2.5 network - your `papercontract` smart contract is also installed on each peer in this network. For the purposes of this tutorial, all 3 organisation's nodes will be deployed to the same 30-day trial cluster. You can get [information on how to get this cluster](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-saas-pricing#ibp-saas-pricing-free) and use it free for 30 days. For full details on getting the trial SaaS environment, see the [outlined steps here](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-saas-pricing#ibp-saas-pricing-free-howto)
 
 The ansible collection is fully-scripted for you; all you have to do is: get your free cluster, set up an IBM Blockchain Platform service, then: 'press the button'. If you want to read more on IBM Blockchain Ansible collections, including a tutorial - check it out [here](https://ibm-blockchain.github.io/ansible-collection/) 
 
@@ -21,7 +21,7 @@ The last part of the tutorial will see you using a HTML 5 client app to render a
 
 ## Pre-requisites
 
-You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create an IBM Blockchain Platform service instance. You can avail of the 30-day free cluster trial (see Step 1 below), or use an existing IBM Kubernetes cluster in IBM Cloud that is a supported level as described [here](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-console-overview#ibp-console-overview-supported-cfg)
+You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create an IBM Blockchain Platform service instance. You can avail of the 30-day free cluster trial (see Step 1 below), or use an existing IBM Kubernetes cluster in IBM Cloud that is a supported level as described [here](https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-console-overview#ibp-console-overview-supported-cfg). 
 
 
 ## Steps
