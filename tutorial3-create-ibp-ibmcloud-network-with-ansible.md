@@ -28,7 +28,7 @@ You will need an IBM Kubernetes cluster in IBM Cloud and you'll need to create a
 
 ### Step 1: Create your cluster, IBM Blockchain Service instance and Service Credentials
 
-1. Log into IBM Cloud and create your free cluster `mycluster` in IBM Cloud -you can[preview the IBM Blockchain Platform in IBM Cloud at no charge for 30 days](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fblockchain).
+1. Log into IBM Cloud and create your free cluster `mycluster` in IBM Cloud -you can [preview the IBM Blockchain Platform in IBM Cloud at no charge for 30 days](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fblockchain).
 
     - Create the cluster with the name `mycluster` - it will take a couple of hours to have the IBM Kubernetes cluster provisioned and available (`Status: Green` in your Cloud environment). 
 
@@ -314,7 +314,7 @@ In this section, you'll test your queries pull data from the real Commerce netwo
 
 ### Step 7. Connect up the query client application (Node.JS) to render asset history in a HTML browser app
 
-1. Locate the client script `clientapp.js` and peruse it to see how it connects to the IBM Cloud 'Commerce' network using the following parameters:
+1. Locate the client script `clientqueryapp.js` and peruse it to see how it connects to the IBM Cloud 'Commerce' network using the following parameters:
 
     - Gateway (via the `connection.json` from one of the three organisation's in our environment)
     - Identity (one of the three application identities we created)
@@ -333,7 +333,7 @@ In this section, you'll test your queries pull data from the real Commerce netwo
 3. Launch the Node.js application as follows: you need to provide two parameters (Organisation name and identity name):
 
     ```
-    node clientapp.js DigiBank  david
+    node clientqueryapp.js DigiBank  david
     ```
 
     <img src="/img/tutorial3/clientapp-query.png" title="Query History from client" alt="Query History from client" />
@@ -382,7 +382,7 @@ In this section, edit the `clientqueryapp.js`  and add a piece of code to get de
 3. Now invoke the upgraded client app just as you had done before:
 
     ```
-    node clientapp.js DigiBank  david
+    node clientqueryapp.js DigiBank  david
     ```
 
 4. Now using the provided `deltas.html` provided in the Github repo, render the results in `deltas.json` in your browser app - you'll provide a parameter to this file:
