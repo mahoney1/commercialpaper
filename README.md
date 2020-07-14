@@ -38,13 +38,17 @@ A typical local dev lifecycle looks something like this:
 
 ## Out of date series links.
 
+Please create an issue above ^^ or DM on Rocketchat - Rocketchat is at chat.hyperledger.org FYI.
+
+Paul O'Mahoney (Rocketchat id: mahoney1).
+
+## Out of date series links (being replaced by the links above).
+
 Running the Commercial Paper sample, using different blockchain IDs - https://developer.ibm.com/tutorials/run-commercial-paper-smart-contract-with-ibm-blockchain-vscode-extension/
 
 Adding Query capability - https://developer.ibm.com/tutorials/queries-commercial-paper-smart-contract-ibm-blockchain-vscode-extension/
 
 Adding Deltas capability - https://developer.ibm.com/tutorials/add-further-query-functionality-using-the-ibp-vscode-extension/
 
-Please msg me DIRECT (not on main channel) on Rocketchat (mahoney1) - chat.hyperledger.org if you have any issues.
 
-Paul O'Mahoney (Rocketchat: mahoney1).
 Artifacts for Commercial Paper tutorials (2020)
