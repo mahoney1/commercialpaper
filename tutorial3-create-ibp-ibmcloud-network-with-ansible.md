@@ -87,18 +87,18 @@ In this section, you will launch the ansible builder to provision a network for 
     cd ansible-collection
     ```
 
-2. You will need pre-requisite images for the IBM Blockchain Platform Ansible collection itself (as outlined in the [Installation pages](https://ibm-blockchain.github.io/ansible-collection/installation.html) . For this - we conveniently built a Docker image that contains **all** of the pre-requisites from a `Dockerfile` in the `docker` subdirectory of the cloned collection. Use the sequence below to build the image. Please don't forget the '.' at the end of the command:
+2. You will need pre-requisite images for the IBM Blockchain Platform Ansible collection itself (as outlined in the [Installation pages](https://ibm-blockchain.github.io/ansible-collection/installation.html) . For this - we conveniently built a Docker image that contains **all** of the pre-requisites from a `Dockerfile` in the `docker` subdirectory of the cloned collection. Use the sequence below to build the image (see also, comment below about new IBP ansible image). Please don't forget the '.' at the end of the command:
 
     ```
     cd docker
     docker build --tag myansible:latest .
     ```
     
-    ** As of September 2020 - there is now a docker image, that does the above for you ^^ - it is an Ansible collection for building Hyperledger Fabric networks using the IBM Blockchain Platform: more info at  https://registry.hub.docker.com/r/ibmcom/ibp-ansible  (and then just replace the tagg
-
+    ** As of September 2020 - there is now a docker image `ibp-ansible` on Docker Hub, that does the above for you ^^ - it is an Ansible collection for building Hyperledger Fabric networks using the IBM Blockchain Platform: more info at  https://registry.hub.docker.com/r/ibmcom/ibp-ansible  
+    
     <img src="/img/tutorial3/docker-build.png" title="Docker build" alt="Ansible docker build" />
 
-    This build will take approx 15mins or so to complete, please note. Once complete, you will have a docker image (checked using `docker images`) that's tagged  `myansible:latest` in step 6 below. 
+    The above build process, will take approx 15mins or so to complete, please note. Once complete, you will have a docker image (checked using `docker images`) that's tagged  `myansible:latest`.  If you're using/downloading the `ibp-ansible` image, then replace the tagged image name in step 6 below.
 
     We're now ready to build our IBM Blockchain Platform network.
 
